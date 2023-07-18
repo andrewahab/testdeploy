@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profil Saya</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="asset/css/style320.css">
+        <style>
+            .error {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="menu-mobile">
+                <a href="#">Menu</a>
+            </div>
+             
+            <ul id="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">INVENTORY</a></li>
+            </ul>
+        </nav>
+
+        <section id="box-profile">
+            <div class="img-profile">
+                <div class="photo" style="background-image: url(asset/image/download.jpeg)">
+                </div>
+            </div>
+            <div class="description">
+                <h1 id="name">Nama Saya</h1>
+                <p id="role">Back End Engineer</p>
+                <a href="#" class="button bg-blue" id="bio" onclick="buttonEdit(event)">Edit</a>
+                <a href="#" class="button border-green">Resume</a>
+            </div>
+            <div class="information">
+                <div class="data">
+                    <p class="field">Availability</p>
+                    <p class="text-gray" id="availability">Full Time</p>
+                </div>
+                <div class="data">
+                    <p class="field">Usia</p>
+                    <p class="text-gray" id="usia">25</p>
+                </div>
+                <div class="data">
+                    <p class="field">Lokasi</p>
+                    <p class="text-gray" id="lokasi">Bali</p>
+                </div>
+                <div class="data">
+                    <p class="field">Pengalaman</p>
+                    <p class="text-gray" id="pengalaman">1 Tahun</p>
+                </div>
+                <div class="data">
+                    <p class="field">Email</p>
+                    <p class="text-gray" id="email">email@blablabla.com</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="input-form">
+            <form onsubmit="buttonSubmit(event)">
+                <div class="form">
+                    <label>Nama</label>
+                    <input type="text" name="nama" placeholder="Nama Saya" id="formNama">
+                </div>   
+                <div class="form">
+                    <label>Role</label>
+                    <input type="text" name="role" placeholder="Back End Engineer" id="formRole">
+                </div>  
+                <div class="form">
+                    <label>Availability</label>
+                    <input type="text" name="Availability" placeholder="Full Time" id="formAvailability">
+                </div>  
+                <div class="form">
+                    <label>Usia</label>
+                    <input type="number" name="usia" placeholder="25" id="formUsia">
+                </div>  
+                <div class="form">
+                    <label>Lokasi</label>
+                    <input type="text" name="lokasi" placeholder="Bali" id="formLokasi">
+                </div>  
+                <div class="form">
+                    <label>Years Experience</label>
+                    <input type="number" name="pengalaman" placeholder="1" id="formPengalaman">
+                </div>  
+                <div class="form">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="email@blablabla.com" id="formEmail">
+                </div>            
+                <div class="form">
+                    <input type="submit" name="submit" value="SUBMIT" class="bg-green">
+                </div>
+            </form>            
+        </section>
+        <script src="script.js">
+
+        </script>
+    </body>
+</html>
